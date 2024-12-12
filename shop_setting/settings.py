@@ -54,8 +54,11 @@ ROOT_URLCONF = 'shop_setting.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        'DIRS': [
+            BASE_DIR / 'templates',
+            BASE_DIR / 'apps/shop/templates'
+        ],
+        'APP_DIRS': True,  # Включает автоматический поиск в приложениях
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',

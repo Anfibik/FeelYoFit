@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Shop{% endblock %}</title>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'shop:index' %}">Главная</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        {% block content %}
+        <!-- Этот блок будет переопределяться в дочерних шаблонах -->
+        {% endblock %}
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2024 My Shop. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
