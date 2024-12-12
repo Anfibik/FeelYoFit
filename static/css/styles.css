@@ -1,0 +1,37 @@
+/* Сброс стилей списка */
+.header-menu {
+    list-style: none; /* Убирает точки */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Располагает элементы в одну строку */
+    justify-content: left; /* Центрирует кнопки по горизонтали */
+    gap: 15px; /* Расстояние между кнопками */
+}
+
+/* Стили для кнопок */
+.header-menu li a {
+    display: inline-block;
+    padding: 5px 20px; /* Внутренний отступ */
+    text-decoration: none; /* Убирает подчеркивание */
+    color: #38075e; /* Темно-фиалковый текст */
+    background-color: #e3d5f7; /* Светло-фиалковый фон */
+    border-radius: 2px; /* Закругленные углы */
+    font-size: 14px; /* Размер шрифта */
+    font-weight: bold; /* Жирный текст */
+    transition: all 0.3s ease; /* Анимация при наведении */
+}
+
+/* Эффект при наведении */
+.header-menu li a:hover {
+    background-color: #5a009d; /* Темно-фиалковый фон */
+    color: #fff; /* Белый текст */
+    transform: scale(1.1); /* Увеличение кнопки */
+    box-shadow: 0 4px 10px rgba(90, 0, 157, 0.3); /* Тень */
+}
+
+/* Эффект клика */
+.header-menu li a:active {
+    background-color: #a347ff; /* Светлее при клике */
+    transform: scale(0.95); /* Немного уменьшаем размер */
+    box-shadow: 0 2px 5px rgba(90, 0, 157, 0.2); /* Уменьшаем тень */
+}
